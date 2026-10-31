@@ -1,0 +1,98 @@
+:root {
+  /* 7CodeArena Exact Production Color Palette */
+  --ca-teal-primary: #00b8a3;
+  --ca-teal-hover: #008a7a;
+  --ca-teal-glow: rgba(0, 184, 163, 0.4);
+  --ca-teal-light: #e0f7fa;
+  --ca-teal-subtle: rgba(0, 184, 163, 0.12);
+  
+  --ca-gold: #facc15;
+  --ca-gold-deep: #b59410;
+  --ca-gold-subtle: rgba(250, 204, 21, 0.12);
+  
+  --ca-blue-accent: #2566e8;
+  --ca-purple: #a855f7;
+  
+  --ca-bg-darkest: #07090e;
+  --ca-bg-slate-900: #0b1220;
+  --ca-bg-card: #0f172a;
+  --ca-bg-card-hover: #1e293b;
+  
+  --ca-border-subtle: rgba(51, 65, 85, 0.6);
+  --ca-border-teal: rgba(0, 184, 163, 0.4);
+  
+  --ca-text-main: #f8fafc;
+  --ca-text-body: #e2e8f0;
+  --ca-text-muted: #94a3b8;
+  --ca-text-dark: #1c2b33;
+
+  /* Fonts */
+  --font-brand: 'Josefin Sans', sans-serif;
+  --font-heading: 'Montserrat', sans-serif;
+  --font-body: 'Noto Sans', sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace;
+
+  font-family: var(--font-body);
+  line-height: 1.5;
+  color-scheme: dark;
+  color: var(--ca-text-main);
+  background-color: var(--ca-bg-darkest);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(circle at 50% 0%, #0d1a29 0%, #07090e 70%);
+  background-attachment: fixed;
+  color: var(--ca-text-main);
+  font-family: var(--font-body);
+  overflow-x: hidden;
+}
+
+/* 7CodeArena Signature Classes from Live Site */
+.universe-text {
+  background: linear-gradient(135deg, #00b8a3 0%, #38bdf8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.battle-heading {
+  font-family: var(--font-heading);
+  font-weight: 800;
+  letter-spacing: -0.5px;
+}
+
+.battle-accent-text {
+  color: var(--ca-teal-primary);
+  font-weight: 700;
+}
+
+.battle-stat {
+  font-family: var(--font-heading);
+  font-weight: 800;
+}
+
+/* Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #07090e;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #00b8a3;
+}
